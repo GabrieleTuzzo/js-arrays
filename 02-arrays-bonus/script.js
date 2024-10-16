@@ -27,5 +27,12 @@ const longNames = teachers.filter((word) => word.length >= 5)
 // }
 
 // 3. Rimuovi 'Ed' dall'array teachers
-teachers.splice(-2, 1)
+// teachers.splice(-2, 1)
 // console.log(teachers)
+
+for ( let i=0; i < teachers.length; i++) {
+    if (teachers[i] === 'Ed') {
+      teachers.splice(i, 1)
+    }
+  }
+console.log(teachers)
